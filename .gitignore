@@ -1,0 +1,5 @@
+full_docs_small
+__pycache__
+queries
+embeddings.pt
+query_results.csv
