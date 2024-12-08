@@ -34,6 +34,10 @@ def extract_docs_queries(first_row, batch_size, retrieve_docs = False):
     return queries_relevant_text
 
 
+"""
+Function to compute embeddings for all text documents in a given directory
+and save them to a file.
+"""
 def embedding():
     path = "full_docs_small"
     docs = {}
