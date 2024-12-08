@@ -28,6 +28,18 @@ def find_map_mar(k_values, results, docs, output):
         print(f"MAR@{k}: {mar_k:.3f}")
 
 
+"""
+Process queries to calculate MAP and MAR at specified ranks (k) and store the results in a CSV file.
+Arguments:
+    model (SentenceTransformer): Pre-trained Sentence-BERT model for generating embeddings.
+    query_docs (dict): Dictionary containing query IDs, query texts, and relevant documents.
+    k_values (list): A list of rank positions (k) for which MAP and MAR are calculated.
+    output_path (str): Path to save the output results as a CSV file.
+    embeddings (np.ndarray): Array of document embeddings.
+    doc_names (list): List of document names corresponding to the embeddings.
+Returns:
+    None: Results are saved directly to the output CSV file.
+"""
 def process_map_mar(model, query_docs, k_values, output_path, embeddings, doc_names):
 
     num_query = 1
